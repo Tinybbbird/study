@@ -117,3 +117,61 @@ for(var i=0,j=arr.length-1;i<j;){
   }
 }
 ```
+9.
+```javascript
+var length=10;
+function fn(){
+  console.log(this.length);//this指向全局变量，所以为window
+}
+var obj={
+  length:5,
+  method(fn){
+    fn();
+    arguments[0]{};
+  }
+}
+obj.method(fn,1);//10 2
+```
+    arguments = {
+      0:fn,    //function fn(){console.log(this.length);}
+      1:第二个参数 1，
+      length:2
+    }
+    arguments的length=2,arguments[0]()可以理解为arguments.0()，所以this指向arguments
+10.
+```javascript
+function fn(a){
+  console.log(a);
+  var a=2;
+  function a(){}
+  console.log(a);
+}
+fn(1);
+```
+    变量提升，最后会变成
+    var a;
+    function a;
+    console.log(a);//function a(){}
+    a=2;console.log(a);//2
+11.
+```javascript
+var f=true;
+if(f===true){//js中没有块级作用域
+  var a=10;
+}
+function fn(){
+  var b=20;//b为局部变量
+  c=30;//强行给未声明的变量赋值，c为全局变量
+}
+fn();
+console.log(a);//10
+console.log(c);//30
+console.log(b);//报错
+```
+12.
+```
+if('a' in window){ //window对象中是否含有a属性
+  var a=10;//变量提升，a为全局变量
+}
+alert(a);//10
+```
