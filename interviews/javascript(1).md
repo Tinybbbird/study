@@ -175,3 +175,35 @@ if('a' in window){ //window对象中是否含有a属性
 }
 alert(a);//10
 ```
+13.
+```javascript
+var a=10;
+a.pro=10;//new Number(10).pro=10；自动释放。pro属性随着释放
+console.log(a.pro+a);//a.pro为undefined，所以结果为NaN
+var s="hello";
+s.pro='world';
+console.log(s.pro+s);//undefinedworld
+```
+    每当对原始类型的值调用方法或属性时，都会自动创建包装类型对象，且该对象在调用后自动释放
+14.实现点击对应链接alert相应编号
+```
+<body>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+</body>
+```
+```javascript
+var as=document.getElementsByTagName("a");
+var i=0;
+for(var a of as){
+    i++;
+    a.onclick=(function(i){
+        return function(){
+        alert(i);
+        }
+    })(i);
+}
+```
+    
