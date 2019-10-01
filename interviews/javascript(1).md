@@ -206,4 +206,15 @@ for(var a of as){
     })(i);
 }
 ```
-    
+15.将url参数解析为一个对象
+```javascript
+var search="?key0=0&key1=1";//location.search
+search=serch.slice(1);
+var strs=search.split("&");
+var params={};
+for(var str of strs){
+    var arr=str.split("=");
+    params[arr[0]]=arr[1];
+}
+console.log(params);
+```
