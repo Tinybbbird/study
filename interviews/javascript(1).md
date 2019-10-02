@@ -218,3 +218,38 @@ for(var str of strs){
 }
 console.log(params);
 ```
+16.统计一个字符串中字符出现的个数，最多为几次
+```javascript
+var str="helloworld";
+var dict={};
+for(var i=0;i<str.length;i++){
+    if(dict[str[i]]===undefined){
+        dict[str[i]]=1;
+    }else{
+        dict[str[i]]++;
+    }
+}
+console.log(dict);
+var max,count=0;
+for(var key in dict){
+    if(dict[key]>count){
+        max=key;
+        count=dict[key];
+    }
+}
+console,log(max,count);
+```
+17.
+```javascript
+var a=10;
+var obj={
+    a:20,
+    intr:function(){
+        var a=30;
+        console.log(this.a);
+    }
+}
+obj.intr();//20
+var intr=obj.intr;
+intr();//10
+```
