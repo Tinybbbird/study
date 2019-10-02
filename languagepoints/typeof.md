@@ -26,7 +26,7 @@ var a=10,b=NaN;
 console.log(isNaN(a),isNaN(b));//false,true
 ```
 判断对象和数组方法（Array.isArray(),Object.prototype.toString.call()）
-```
+```javascript
 var a={},b=[];
 console.log(Array.isArray(a),Array.isArray(b));//false,true
 console.log(Object.prototype.toString.call(a)==="[object Array]", 
