@@ -71,3 +71,16 @@ setInterval(function(){
     recMsg.innerHTML=getkey(msg);}
 ,500)
 ```
+
+  (2)localStorage
+  
+```javascript
+//send.html
+send.onclick=function(){
+    localStorage.setItem("msg",msg.value.trim());
+}
+//rec.html
+window.addEventListener("storage",function(){
+  recMsg.innerHTML=localStorage.getItem("msg");
+})//只要修改localstorage的值会自动触发其他页面中的storage事件
+```
