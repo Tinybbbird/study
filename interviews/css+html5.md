@@ -52,3 +52,22 @@
     iframe会阻塞主页面的Onload事件
     不利于SEO
     影响页面的并行加载
+
+9.如何实现浏览器内多个标签页的通信？
+
+  （1）cookie+setInterval方法
+    
+```javascript
+//send.html
+send.onclick=function(){
+    document.cookie=`msg=${msg.value.trim()}`
+}
+//rec.html
+function getkey(key){ //将cookie里的字符串转化为数组
+    var cookies=JSON.parse(`{"${document.cookie.replace(/=/g,'":"').replace(/;\s+/g,'", "')}"}`)
+    return cookies[key];
+}
+setInterval(function(){
+    recMsg.innerHTML=getkey(msg);}
+,500)
+```
