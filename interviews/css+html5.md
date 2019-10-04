@@ -1,3 +1,6 @@
+html
+=
+
 1.Doctype作用？标准和兼容模式各有什么区别？
 
     告知浏览器的解析器用什么文档标准解析这个文档
@@ -63,7 +66,7 @@ send.onclick=function(){
     document.cookie=`msg=${msg.value.trim()}`
 }
 //rec.html
-function getkey(key){ //将cookie里的字符串转化为数组
+function getkey(key){ //将cookie里的字符串转化为对象
     var cookies=JSON.parse(`{"${document.cookie.replace(/=/g,'":"').replace(/;\s+/g,'", "')}"}`)
     return cookies[key];
 }
@@ -84,3 +87,105 @@ window.addEventListener("storage",function(){
   recMsg.innerHTML=localStorage.getItem("msg");
 })//只要修改localstorage的值会自动触发其他页面中的storage事件
 ```
+
+  (3)websocket
+
+```javascript
+//server.js
+var webSocketServer = require("ws").Server;
+//创建webSocketServer对象实例
+var wss=new webSocketServer({port:8080});
+//创建保存所有连接到服务器的客户端对象数组
+var clients=[];
+//为服务器添加connection事件监听
+wss.on('connection',function (client){
+  if(clients.indexOf(client)===-1){
+    clients.push(client);
+    //为每个client对象绑定message事件
+    client.on('message',function(msg){
+      console.log(msg);      
+      for(var c of clients){
+        if(c!=client){
+          c.send(msg);
+        }
+      }
+    })
+  }
+})
+//send.html
+<body>
+  <input type="text" id="msg">
+  <button id="send">发送</button>
+  <script>
+    var ws=new WebSocket("ws://localhost:8080");
+    send.onclick=function(){
+      if(msg.value.trim()!=="")
+      ws.send(msg.value.trim());
+    }
+  </script>
+</body>
+//rec.html
+<body>
+  <h1>收到消息：<span id="recMsg"></span></h1>
+    <script>
+        //建立到服务器的连接
+        var ws=new WebSocket("ws://localhost:8080");
+        //当连接被打开，注册接收消息的处理函数
+        ws.onopen=function(event){
+        //当有消息发过来时显示消息
+          ws.onmessage=function(event){
+            recMsg.innerHTML=event.data;
+          }
+        }
+    </script>
+</body>
+```
+
+  （4）SharedWorker
+  
+```javascript
+//worker.js
+//存储多个worker共享的数据
+let data="";
+//为新创建的worker绑定onconnect事件处理函数
+onconnect=function(e){
+  //获得当前连接上的客户端对象
+  var client=e.ports[0];
+  client.onmessage=function(e){
+    if(e.data===""){//消息内容为空，客户端获取data数据
+      client.postMessage(data);
+    }else{//消息不为空，将消息存在data中
+      data=e.data;
+    }
+  }
+}
+//send.html
+var worker=new SharedWorker("worker.js");
+worker.port.start();
+send.onclick=function () {
+  if(msg.value.trim()!==""){
+    worker.port.postMessage(msg.value.trim())
+  }
+}
+//rec.html
+var worker=new SharedWorker("worker.js");
+//2.当返回data触发message事件. data的值保存入事件对象e的data属性中
+worker.port.addEventListener("message",function(e){
+  recMsg.innerHTML=e.data;
+})
+worker.port.start();
+//接收端反复向work.js发送空消息获取data的值
+setInterval(() => {
+  worker.port.postMessage("");
+},500);
+```
+
+CSS
+=
+
+1.display:none 和 visibility:hidden区别
+
+    display:none:会让元素完全从渲染树中消失，不占任何空间；visibility:hidden只是内容不可见
+    display:none非继承属性 visibility:hidden继承属性
+    修改display会造成文档重排，修改visibility只会造成元素重绘
+    读屏幕不会读取display:none的内容，会读取visibility:hidden的内容
