@@ -67,7 +67,8 @@ send.onclick=function(){
 }
 //rec.html
 function getkey(key){ //将cookie里的字符串转化为对象
-    var cookies=JSON.parse(`{"${document.cookie.replace(/=/g,'":"').replace(/;\s+/g,'", "')}"}`)
+    var cookies=JSON.parse(`{"${document.cookie.replace(/=/g,'":"')
+    .replace(/;\s+/g,'", "')}"}`)
     return cookies[key];
 }
 setInterval(function(){
