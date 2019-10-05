@@ -126,4 +126,32 @@ function Pet(name,age,hobby){
 var maidou =new Pet("麦兜",25,"coding");//实例化、创建对象
 maidou.eat();//调用eat方法
 ```
+5.防抖和节流的实现
 
+防抖：只要不是最后一次触发就不执行异步操作
+```js
+var timer;
+window.onscroll=function(){
+  if(timer!==undefined){
+    clearTimeout(timer);
+  }
+  //当200ms内未发生滚动时发送请求
+  timer=setTimeout(() => {
+    console.log("发送请求")
+  }, 200);
+}
+```
+节流：第一次发送请求后，只要响应没回来就不发送第二个
+```js
+var canClick=true;//定义开关变量
+btn.onclick=function(){
+  if(canClick){//如果当前开关开着，说明可以单击
+    canClick=false;
+    console.log("发送请求")
+    setTimeout(() => {
+      console.log("加载完成")
+      canClick=true;
+    }, 3000);
+  }
+}
+```
