@@ -33,7 +33,88 @@ dom面试题整理
     在解析 HTML 生成 DOM 过程中，js 文件的下载是并行的，不需要 DOM 处理到 script 节点。因此，script 的位置不影响首屏显示的开始时间。
     浏览器解析 HTML 是自上而下的线性过程，script 作为 HTML 的一部分同样遵循这个原则
     因此，script 会延迟 DomContentLoad，只显示其上部分首屏内容，从而影响首屏显示的完成时间
-
-
+7.DOM的浏览器兼容性问题
     
+（1）事件模型：
+
+  DOM：1.捕获 2.目标触发 3.由内向外：冒泡
+
+  IE8：1.目标触发 2.冒泡
+
+（2）事件绑定：
+
+  DOM：```elem.addEventListener("click",function(){},false);```
+
+  第三个参数capture:是否在捕获阶段提前触发 
+  
+  IE8:```elem.attachEvent("onclick",function(){})```
+  
+（3）移除事件：
+
+  DOM:```elem.removeEventListener('click', handler, false);```
+  
+  IE8：```elem.detachEvent(event, handler);```
+  
+（4）获取事件对象：
+  
+  DOM:```function(e){}```
+  
+  IE8:不会自动传入事件对象e，```function(){var e=window.event}```
+  
+（5）阻止冒泡：
+
+  DOM：```e.stopPropagation()```
+  IE8:```e.cancelBubble=true```
+  
+  (6)阻止默认行为：
+  
+  DOM：```e.preventDefault()```
+  IE8:事件处理函数中：```return false;``` ;```e.returnValue = false'```
+  
+  (7)获取目标元素：
+  
+  DOM：```e.target```
+  IE8:```e.srcElement```
+  
+  定义一个函数可以支持所有浏览器和处理函数的绑定：
+  ```js
+  function bindEvent(elem,eventName,handler){
+      if(typeof elem.attachEvent!=="function"){
+        elem.addEventListener(eventName,handler)
+      }else{
+        elem.attachEvent("on"+eventName,function(){
+          var e=window.event;
+          e.target=e.srcElement;
+          handler.call(this,e);
+        })
+      }
+    }
+    bindEvent(btn,"click",function(e){
+      var target=e.target;
+    })
+  ```
+8.事件委托
+
+事件委托是指将事件绑定目标元素的到父元素上，利用冒泡机制触发该事件
+
+优点：
+
+-   事件监听对象个数少，节省大量内存占用
+-   可以将事件应用于动态添加的子元素上
+
+缺点： 使用不当会造成事件在不应该触发时触发
+
+示例：
+
+```js
+ulEl.addEventListener('click', function(e){
+    var target = event.target || event.srcElement;
+    if(!!target && target.nodeName.toUpperCase() === "LI"){
+        console.log(target.innerHTML);
+    }
+}, false);
+```
+9.如何获得一个 DOM 元素的绝对位置？
     
+    elem.offsetLeft：返回元素相对于其定位父级左侧的距离
+    elem.offsetTop：返回元素相对于其定位父级顶部的距离
