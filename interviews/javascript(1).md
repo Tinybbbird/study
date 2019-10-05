@@ -253,3 +253,11 @@ obj.intr();//20
 var intr=obj.intr;
 intr();//10
 ```
+18.[1,2,3].map(parseInt)
+
+    parseInt(string,radix),radix表示进制，省略 radix 或 radix = 0，则数字将以十进制解析
+    map 每次为 parseInt 传 3 个参数(elem, index, array)，
+    因此，map 遍历 ["1", "2", "3"]，相应 parseInt 接收参数如下
+    parseInt('1', 0);  // 1
+    parseInt('2', 1);  // NaN
+    parseInt('3', 2);  // NaN
