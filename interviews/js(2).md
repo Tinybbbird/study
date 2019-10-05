@@ -14,7 +14,7 @@ javascript笔试题整理（二）
 2.JavaScript 如何实现一个类，怎么实例化这个类？
 
 （1）. 构造函数法（this + prototype） -- 用 new 关键字 生成实例对象
-    - 缺点：用到了 this 和 prototype，编写复杂，可读性差
+     - 缺点：用到了 this 和 prototype，编写复杂，可读性差
 
 ```js
   function Mobile(name, price){
@@ -43,6 +43,7 @@ javascript笔试题整理（二）
   var point = new Point(2, 3);
 ```
 3. Javascript 如何实现继承？
+
 （1）构造函数绑定：使用 call 或 apply 方法，将父对象的构造函数绑定在子对象上
 
 ```js
@@ -99,6 +100,7 @@ class ColorPoint extends Point {
 }
 ```
 4. javascript 创建对象的几种方式？
+
 (1)对象字面量的方式
 
 ```js
