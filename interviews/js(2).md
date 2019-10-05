@@ -157,3 +157,37 @@ btn.onclick=function(){
   }
 }
 ```
+6.new操作符干了什么
+
+（1） 新建一个空对象
+
+（2）让子对象的_ _proto_ _属性指向妈妈的原型对象
+
+（3）用new调用构造函数。将构造函数中的this，都吸引到new上！
+    然后通过强行赋值的方式！给新对象添加构造函数的属性和方法！
+    
+（4）返回新对象的地址给变量保存起来。
+
+7.js数组的原生方法
+
+    arr.concat(arr1, arr2, arrn);
+    arr.join(",");
+    arr.sort(func);
+    arr.pop();
+    arr.push(e1, e2, en);
+    arr.shift();
+    unshift(e1, e2, en);
+    arr.reverse();
+    arr.slice(start, end);
+    arr.splice(index, count, e1, e2, en);
+    arr.indexOf(el);
+        
+ 8.为什么 JS 是单线程,而不是多线程
+ 
+    单线程是指 JavaScript 在执行的时候，有且只有一个主线程来处理所有的任务。
+    目的是为了实现与浏览器交互。
+    我们设想一下，如果 JavaScript 是多线程的，现在我们在浏览器中同时操作一个 DOM，
+    一个线程要求浏览器在这个 DOM 中添加节点，
+    而另一个线程却要求浏览器删掉这个 DOM 节点，那这个时候浏览器就会很郁闷，
+    他不知道应该以哪个线程为准。所以为了避免此类现象的发生，降低复杂度，
+    JavaScript 选择只用一个主线程来执行代码，以此来保证程序执行的一致性。
