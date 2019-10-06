@@ -118,3 +118,70 @@ ulEl.addEventListener('click', function(e){
     
     elem.offsetLeft：返回元素相对于其定位父级左侧的距离
     elem.offsetTop：返回元素相对于其定位父级顶部的距离
+    
+10.判断是什么浏览器？
+```js
+var ua=navigator.userAgent;
+    document.write(`<h1>${ua}</h1>`);
+    var browser, version;
+    //如果ua中包含MSIE，说明一定是IE浏览器
+    if(ua.indexOf("MSIE")!=-1){
+      browser="IE"
+    }else if(ua.indexOf("Trident")!=-1){
+      browser="IE",version=11;
+    }
+    //如果ua中包含Firefox，说明一定是Firefox浏览器
+    else if(ua.indexOf("Firefox")!=-1){
+      browser="Firefox"
+    }
+    //如果ua中包含OPR，说明一定是OPR浏览器
+    else if(ua.indexOf("OPR")!=-1){
+      browser="OPR"
+    }
+    //如果ua中包含Edge，说明一定是Edge浏览器
+    else if(ua.indexOf("Edge")!=-1){
+      browser="Edge"
+    }
+    //如果ua中包含Chrome，说明一定是Chrome浏览器
+    else if(ua.indexOf("Chrome")!=-1){
+      browser="Chrome"
+    }
+    //如果ua中包含Safari，说明一定是Safari浏览器
+    else if(ua.indexOf("Safari")!=-1){
+      browser="Safari"
+    }
+    document.write(`<h1>浏览器:${browser}</h1>`);
+
+    //如果还不知道浏览器的版本号时: 
+    if(version===undefined){
+      //获得浏览器名称在ua中的位置
+      var i=ua.indexOf(browser);
+      //i跳过浏览器名称的长度，再+1
+      i+=browser.length+1;
+      //从新i位置向后截3位，再parseFloat转为浮点数
+      version=parseFloat(ua.slice(i,i+3));
+    }
+    document.write(`<h1>版本号:${version}</h1>`)
+```
+
+11.定义一个函数，遍历一个指定父元素下所有后代元素
+```js
+function getChildren(parent){
+	//arguments.callee->getChildren
+	//1. 先获得当前父元素下的所有直接子元素
+	var children=parent.children;
+	//遍历所有直接子元素
+	for(var child of children){
+		//输出当前子元素的标签名
+		console.log( child.nodeName )
+		        //元素的标签名
+		//2. 如果child有下级直接子元素
+		if(child.children.length>0){
+			//就对child继续调用getChildren
+			arguments.callee(child)
+		}
+	}
+}
+//查找body下所有后代元素
+getChildren(document.body);
+```
