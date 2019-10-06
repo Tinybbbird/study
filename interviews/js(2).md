@@ -191,3 +191,21 @@ btn.onclick=function(){
     而另一个线程却要求浏览器删掉这个 DOM 节点，那这个时候浏览器就会很郁闷，
     他不知道应该以哪个线程为准。所以为了避免此类现象的发生，降低复杂度，
     JavaScript 选择只用一个主线程来执行代码，以此来保证程序执行的一致性。
+
+8.js多线程worker的实现
+
+    ```js
+    //worker.js
+    onmessage=function(e){
+      for(var i=0;i<1000000000;i++){
+        this.postMessage(i);
+      }
+    }
+    //worker.html
+    var w=new Worker("work.js");
+    w.onmessage=function(e){
+      console.log(e.data);
+    }
+    w.postMessage("");
+    ```
+    
