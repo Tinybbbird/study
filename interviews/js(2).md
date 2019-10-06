@@ -200,20 +200,20 @@ btn.onclick=function(){
 
 9.js多线程worker的实现
 
-    ```js
-    //worker.js
-    onmessage=function(e){
-      for(var i=0;i<1000000000;i++){
-        this.postMessage(i);
-      }
-    }
-    //worker.html
-    var w=new Worker("work.js");
-    w.onmessage=function(e){
-      console.log(e.data);
-    }
-    w.postMessage("");
-    ```
+```js
+//worker.js
+onmessage=function(e){
+ for(var i=0;i<1000000000;i++){
+   this.postMessage(i);
+ }
+}
+//worker.html
+var w=new Worker("work.js");
+w.onmessage=function(e){
+ console.log(e.data);
+}
+w.postMessage("");
+```
     
 10.什么是闭包？
 
