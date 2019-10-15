@@ -261,3 +261,44 @@ intr();//10
     parseInt('1', 0);  // 1
     parseInt('2', 1);  // NaN
     parseInt('3', 2);  // NaN
+
+19.
+```js
+function Foo(){
+  Foo.a=function(){
+    console.log(1)
+  }
+  this.a=function(){
+    console.log(2)
+  }
+}
+Foo.prototype.a=function(){
+  console.log(3)
+}
+Foo.a=function(){//函数也是一个对象，给函数添加方法a
+  console.log(4)
+}
+Foo.a(); //4
+let obj=new Foo();//调用Foo,创建obj使Foo中的this指向obj
+obj.a();//2   
+Foo.a();//1
+```
+
+20.
+```js
+var x=0;
+var foo={
+  x:1,
+  bar(){
+    console.log(this.x)
+    var that=this;
+    return function(){
+      console.log(this.x)
+      console.log(that.x)//that为外部函数局部变量指向foo
+    }
+  }
+}
+foo.bar();//1 this指向foo
+foo.bar()();//1 0 1
+```
+foo.bar()()相当于function(){ console.log(this.x);console.log(that.x)}(),即匿名函数自调用
