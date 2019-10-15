@@ -301,4 +301,4 @@ var foo={
 foo.bar();//1 this指向foo
 foo.bar()();//1 0 1
 ```
-foo.bar()()相当于function(){ console.log(this.x);console.log(that.x)}(),即匿名函数自调用
+    foo.bar()()相当于function(){ console.log(this.x);console.log(that.x)}(),即匿名函数自调用
