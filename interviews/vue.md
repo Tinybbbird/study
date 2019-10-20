@@ -128,7 +128,9 @@ export default {
         this.message = data;
       }
     },
-    component: ['Main']
+    component: {
+        Main
+    }
 }
 </script>
 ```
@@ -191,3 +193,53 @@ keep-alive 是 Vue 内置的一个组件，可以使被包含的组件保留状�
     前进、后退管理
     初次加载耗时多
 
+12.active-class是那个组件的属性？
+
+    router-link组件的属性(router中可以添加属性linkExactActiveClass:'自定义css类')
+    
+13.嵌套路由怎么定义
+
+```js
+const route = [
+{path:'/',component: 'home',children:[
+    {path:'/', component: 'index'},
+    {path:'/detail', component: 'details'}
+]},
+{path:'/login', component: 'login'}
+]
+```
+
+14.懒加载（按需加载路由）
+
+    Vue首屏加载非常慢
+    原因: 当打包应用时，将所有JavaScript代码打包在一个文件中，导致js代码非常庞大，严重影响页面加载速度。
+    解决: 
+    1.配置打包工具，将组件分别打包到不同的js代码块中
+     build/webpack.base.conf.js
+       output:{
+         path: config.build.assetsRoot,
+          filename:’[name].js’,
+         //新增
+    chunkFilename:”[name].js”,
+    publicPath: process.env.NODE_ENV===”production”
+      ?config.build.assetsPublicPath
+      :config.dev.assetsPublicPath
+    }
+    2.当路由请求到该组件时，才动态加载组件的内容
+      路由字典中，路由配置和以前完全一样
+      但是在引入组件对象时: 
+      import Index from ‘@/views/Index.vue’
+      改为
+      const Index=()=>import(‘@/views/Index.vue’)//仅定义函数暂未执行
+      当用户在vue中请求当前组件对应的路由地址时，由vue-router自动调用加载函数，动态请求Index.vue组件对象
+      
+15.vuex是什么
+
+    vue中的状态管理。在main.js中引入store注入
+    state:模型变量，可以使用$store.state.访问
+    getters:可以理解为state的计算属性。我们在组件中使用 $sotre.getters.fun()
+    mutations:修改状态，并且是同步的。在组件中使用$store.commit('fun',params)。
+    actions:异步操作。在组件中使用是$store.dispath('')。context，它是一个和store对象具有相同对象属性的参数。
+    modules：store的子模块，为了开发大型项目，方便状态管理而使用的
+
+16.
