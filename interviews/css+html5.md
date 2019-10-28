@@ -190,3 +190,30 @@ CSS
     display:none非继承属性 visibility:hidden继承属性
     修改display会造成文档重排，修改visibility只会造成元素重绘
     读屏幕不会读取display:none的内容，会读取visibility:hidden的内容
+    
+2.响应式的实现
+```
+@media screen and (min-width: 1200px){
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+      .container{width:970px}
+      .left,.right{width:20%}
+      .middle{width:60%}
+      .my-img{width:25%}
+    }
+    /*针对pad 750px; 1-3-*屏幕的媒体查询*/
+    @media screen and (min-width: 768px) and (max-width: 991px){
+      .container{width:750px;color:green}
+      .left{width:25%}
+      .middle{width: 75%}
+      .right{display: none;}
+      .my-img{width: 25%}
+    }
+    /*针对phone 100% 100%-100%-0屏幕的媒体查询*/
+    @media screen and (max-width: 767px){
+      .container{width: 100%;color:blue}
+      .left,.middle{width: 100%}
+      .right{display: none}
+      .my-img{width:50%}
+    }
+```
