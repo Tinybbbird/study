@@ -302,3 +302,50 @@ foo.bar();//1 this指向foo
 foo.bar()();//1 0 1
 ```
     foo.bar()()相当于function(){ console.log(this.x);console.log(that.x)}(),即匿名函数自调用
+    
+21.使用一次性定时器模拟周期性定时器
+```js
+<h1 id="h1">10s后自动关闭窗口</h1>
+  <a id="a1" href="javascript:;">启动</a>
+  <script>
+    (function(){
+      var s = 10;
+      var timer;
+      function sub() {
+        timer = setTimeout(() => {
+          s--;
+          h1.innerHTML = `${s}s后自动关闭`;
+          if(s>0) {
+            sub()
+          }else {
+            timer = null;
+          }
+        }, 1000);
+      }
+      
+      a1.onclick = function(){
+        if(timer == null) {
+        sub();
+        this.innerHTML = "停止"
+        }else{
+          clearTimeout(timer);
+          timer = null;
+          this.innerHTML = "启动"
+        }
+      }
+    })()
+  </script>
+```
+
+22.
+```js
+var a=0;
+function (){
+  a=b=3
+}
+setTimeout(function(){
+  console.log(a,b)//3,3
+},0)
+fun()
+//定时器的回调函数只能在回调队列等待，等待主程序执行完
+```
