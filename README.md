@@ -4,4 +4,8 @@
 
 #### [javascript程序题整理](./interviews/javascript(1).md)
 #### [javascript概念题整理](./interviews/js(2).md)
+#### [dom](./interviews/dom.md)
+#### [ajax](./interviews/ajax.md)
+#### [html+css](./interviews/html5+css.md)
+#### [vue](./interviews/vue.md)
 
