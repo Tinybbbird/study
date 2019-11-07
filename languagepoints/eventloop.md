@@ -39,4 +39,4 @@ console.log('e')
 
 nodejs新增process.nextTick位于微任务队列开头
 
-![](./the-Node-js-event-loop.png)
+![](https://github.com/Tinybbbird/study/blob/master/languagepoints/the-Node-js-event-loop.png)
