@@ -13,5 +13,9 @@
 
 ### 知识点
 
-#### []
-#### []
+#### [浅克隆和深克隆](./languagepoints/clone.md)
+#### [跨域](./languagepoints/cors.md)
+#### [事件队列](./languagepoints/eventloop.md)
+#### [mvvm](./languagepoints/mvvm.md)
+#### [typeof的用法](./languagepoints/typeof.md)
+#### [webpack简单使用](./languagepoints/webpack.md)
