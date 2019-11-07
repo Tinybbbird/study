@@ -324,6 +324,44 @@ getJSON('/post/1.json').then(function(post) {
 });
 ```
     catch 方法返回的还是一个 Promise 对象，因此后面还可以接着调用 then 方法
+    
+    Promise.all以数组方式传入，数组方式传出promise对象
+```js
+    return new Promise(function(resolve,reject){
+        if(!Array.isArray(promises)){
+            return reject(new TypeError("argument must be an array"))
+        }
+        var countNum=0;
+        var promiseNum=promises.length;
+        var resolvedvalue=new Array(promiseNum);
+        for(let i=0;i<promiseNum;i++){
+            Promise.resolve(promises[i]).then(function(value){
+                countNum++;
+                resolvedvalue[i]=value;
+                if(countNum===promiseNum){
+                    return resolve(resolvedvalue)
+                }
+            },function(reason){
+                return reject(reason)}
+            )
+        
+    }
+})
+}
+let p1 = new Promise((resolve,reject)=>{
+    resolve(1)
+})
+let p2 = new Promise((resolve,reject)=>{
+    resolve(2)
+})
+let p3 = new Promise((resolve,reject)=>{
+    resolve(3)
+})
+ 
+promiseAll([p1,p2,p3]).then(function(value){
+    console.log(value)
+})
+```
 
 17.async
     
