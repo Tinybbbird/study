@@ -368,3 +368,45 @@ for(let i=0;i<5;i++){
 }
 ```
     let相当于匿名函数自调用
+
+24.
+```js
+var n=2;
+var obj={
+  n:4,
+  fn1:(function(){
+    this.n*=2;
+    n*=2;
+    var n=3;
+    return function(){
+      this.n*=2;
+      n*=3;
+      console.log(n);
+    }
+  })()
+}
+var fn1=obj.fn1;
+console.log(n);//4
+fn1();//9
+obj.fn1()//27
+console.log(n);//8
+console.log(obj.n);//8
+```
+    fn1为匿名函数自调用，里面的this指向全局，此时全局n=4；
+    fn1形成闭包返回一个函数function(){ this.n*=2; n*=3; console.log(n);}，局部变量n=3;
+    this指向全局，全局n=4*2=8,此时局部变量n=n*3=9,调用fn1输出9
+    obj.fn1中this指向obj,obj.n=8,局部变量n=9*3=27,输出局部n=27
+    
+25.
+```js
+var y=10;
+if(!(x in window)){
+  var x=10;
+}else{
+  ++y
+}
+alert(x)//undefined
+alert(y)//11
+```
+    var x声明提前，window中有x变量，!(x in window)：当x不在window中返回true，在返回false,所以执行else语句.
+    属性名 in obj : 判断一个属性是否在obj中或者obj的原型链上
