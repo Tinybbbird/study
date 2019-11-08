@@ -19,3 +19,4 @@
 #### [mvvm](./languagepoints/mvvm.md)
 #### [typeof的用法](./languagepoints/typeof.md)
 #### [webpack简单使用](./languagepoints/webpack.md)
+#### [this指向总结](./languagepoints/this.md)
