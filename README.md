@@ -21,3 +21,9 @@
 #### [typeof的用法](./languagepoints/typeof.md)
 #### [webpack简单使用](./languagepoints/webpack.md)
 #### [this指向总结](./languagepoints/this.md)
+
+---
+
+### 工作日志
+
+### 2020.5.11
