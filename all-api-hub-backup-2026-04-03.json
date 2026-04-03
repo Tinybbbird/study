@@ -1,0 +1,345 @@
+{
+  "version": "2.0",
+  "timestamp": 1775209637179,
+  "accounts": {
+    "accounts": [
+      {
+        "id": "account-b1331cda-bbbf-4aba-95ae-a16fe950fd6b",
+        "site_name": "WOW公益站",
+        "site_url": "https://linuxdoapi.223384.xyz",
+        "health": {
+          "status": "healthy"
+        },
+        "site_type": "new-api",
+        "exchange_rate": 0.5,
+        "account_info": {
+          "id": 8329,
+          "access_token": "Zp3dgjfR0fXoe/NMOiUwLFXSvFrb",
+          "username": "linuxdo_8329",
+          "quota": 100000000,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 100000000
+        },
+        "last_sync_time": 1775208906256,
+        "updated_at": 1775208966822,
+        "created_at": 1775208906257,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "access_token",
+        "checkIn": {
+          "enableDetection": true,
+          "autoCheckInEnabled": true,
+          "siteStatus": {
+            "isCheckedInToday": true,
+            "lastDetectedAt": 1775208966821,
+            "lastCheckInDate": "2026-04-03"
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5
+      },
+      {
+        "id": "account-1d33c798-82ec-4075-8c58-446658aa8b80",
+        "site_name": "Anyrouter",
+        "site_url": "https://anyrouter.top",
+        "health": {
+          "status": "unknown",
+          "reason": "响应数据格式错误"
+        },
+        "site_type": "anyrouter",
+        "exchange_rate": 7.2,
+        "account_info": {
+          "id": 158821,
+          "access_token": "cplgHOMpXz0BaRl9tAIotfpUb3FsEw==",
+          "username": "linuxdo_158821",
+          "quota": 0,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 0
+        },
+        "last_sync_time": 1775209570340,
+        "updated_at": 1775209570341,
+        "created_at": 1775209309980,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "access_token",
+        "checkIn": {
+          "enableDetection": true,
+          "autoCheckInEnabled": true,
+          "siteStatus": {
+            "isCheckedInToday": true,
+            "lastCheckInDate": "2026-04-03",
+            "lastDetectedAt": 1775209325167
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5
+      },
+      {
+        "id": "account-49a32fd8-93ab-43b7-af67-28b9bdeb92b1",
+        "site_name": "Us",
+        "site_url": "https://openai.api-test.us.ci",
+        "health": {
+          "status": "healthy",
+          "reason": "账号状态正常"
+        },
+        "site_type": "new-api",
+        "exchange_rate": 1,
+        "account_info": {
+          "id": 13672,
+          "access_token": "DxnJ+I70jOzkCCWY2bO2UD11AY4JwQ==",
+          "username": "Tinybbbird",
+          "quota": 1846870,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 13482151
+        },
+        "last_sync_time": 1775209548725,
+        "updated_at": 1775209548726,
+        "created_at": 1775209443858,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "access_token",
+        "checkIn": {
+          "enableDetection": true,
+          "autoCheckInEnabled": true,
+          "siteStatus": {
+            "isCheckedInToday": true,
+            "lastDetectedAt": 1775209548725,
+            "lastCheckInDate": "2026-04-03"
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5
+      }
+    ],
+    "bookmarks": [],
+    "pinnedAccountIds": [],
+    "orderedAccountIds": [],
+    "last_updated": 1775209570341
+  },
+  "tagStore": {
+    "version": 1,
+    "tagsById": {}
+  },
+  "preferences": {
+    "activeTab": "cashflow",
+    "currencyType": "USD",
+    "showTodayCashflow": true,
+    "sortField": "balance",
+    "sortOrder": "desc",
+    "actionClickBehavior": "popup",
+    "openChangelogOnUpdate": true,
+    "autoProvisionKeyOnAccountAdd": false,
+    "warnOnDuplicateAccountAdd": true,
+    "accountAutoRefresh": {
+      "enabled": false,
+      "interval": 900,
+      "minInterval": 120,
+      "refreshOnOpen": false
+    },
+    "usageHistory": {
+      "enabled": true,
+      "retentionDays": 7,
+      "scheduleMode": "afterRefresh",
+      "syncIntervalMinutes": 360
+    },
+    "balanceHistory": {
+      "enabled": false,
+      "endOfDayCapture": {
+        "enabled": false
+      },
+      "retentionDays": 365
+    },
+    "showHealthStatus": true,
+    "webdav": {
+      "url": "",
+      "username": "",
+      "password": "",
+      "backupEncryptionEnabled": false,
+      "backupEncryptionPassword": "",
+      "syncData": {
+        "accounts": true,
+        "bookmarks": true,
+        "apiCredentialProfiles": true,
+        "preferences": true
+      },
+      "autoSync": false,
+      "syncInterval": 3600,
+      "syncStrategy": "merge"
+    },
+    "lastUpdated": 1775208966240,
+    "sharedPreferencesLastUpdated": 1775208966240,
+    "newApi": {
+      "baseUrl": "",
+      "adminToken": "",
+      "userId": "",
+      "username": "",
+      "password": "",
+      "totpSecret": ""
+    },
+    "doneHub": {
+      "baseUrl": "",
+      "adminToken": "",
+      "userId": ""
+    },
+    "veloera": {
+      "baseUrl": "",
+      "adminToken": "",
+      "userId": ""
+    },
+    "octopus": {
+      "baseUrl": "",
+      "username": "",
+      "password": ""
+    },
+    "managedSiteType": "new-api",
+    "cliProxy": {
+      "baseUrl": "",
+      "managementKey": ""
+    },
+    "claudeCodeRouter": {
+      "baseUrl": "",
+      "apiKey": ""
+    },
+    "managedSiteModelSync": {
+      "enabled": false,
+      "interval": 86400000,
+      "concurrency": 2,
+      "maxRetries": 2,
+      "rateLimit": {
+        "requestsPerMinute": 20,
+        "burst": 5
+      },
+      "allowedModels": [],
+      "globalChannelModelFilters": []
+    },
+    "autoCheckin": {
+      "globalEnabled": true,
+      "pretriggerDailyOnUiOpen": true,
+      "notifyUiOnCompletion": true,
+      "windowStart": "09:00",
+      "windowEnd": "23:00",
+      "scheduleMode": "random",
+      "deterministicTime": "09:00",
+      "retryStrategy": {
+        "enabled": false,
+        "intervalMinutes": 30,
+        "maxAttemptsPerDay": 3
+      }
+    },
+    "modelRedirect": {
+      "enabled": false,
+      "standardModels": [
+        "gpt-4o",
+        "gpt-4o-mini",
+        "o3",
+        "o3-mini",
+        "gpt-5",
+        "gpt-5-mini",
+        "gpt-5-codex",
+        "claude-4.5-haiku",
+        "claude-4.5-sonnet",
+        "claude-4.1-opus",
+        "gemini-2.5-pro",
+        "gemini-2.5-flash",
+        "mistral-small",
+        "mistral-large",
+        "mistral-medium",
+        "deepseek-chat",
+        "deepseek-reasoner",
+        "glm-4.6",
+        "glm-4.5",
+        "glm-4.5-air",
+        "qwen-max",
+        "qwen-plus",
+        "qwen-flash",
+        "qwen-coder"
+      ],
+      "pruneMissingTargetsOnModelSync": false
+    },
+    "redemptionAssist": {
+      "enabled": true,
+      "contextMenu": {
+        "enabled": true
+      },
+      "relaxedCodeValidation": true,
+      "urlWhitelist": {
+        "enabled": true,
+        "patterns": [
+          "cdk.linux.do"
+        ],
+        "includeAccountSiteUrls": true,
+        "includeCheckInAndRedeemUrls": true
+      }
+    },
+    "webAiApiCheck": {
+      "enabled": true,
+      "contextMenu": {
+        "enabled": true
+      },
+      "autoDetect": {
+        "enabled": false,
+        "urlWhitelist": {
+          "patterns": []
+        }
+      }
+    },
+    "themeMode": "system",
+    "language": "zh-CN",
+    "logging": {
+      "consoleEnabled": true,
+      "level": "info"
+    },
+    "preferencesVersion": 17,
+    "tempWindowFallback": {
+      "enabled": true,
+      "useInPopup": true,
+      "useInSidePanel": true,
+      "useInOptions": true,
+      "useForAutoRefresh": true,
+      "useForManualRefresh": true,
+      "tempContextMode": "composite"
+    },
+    "tempWindowFallbackReminder": {
+      "dismissed": false
+    }
+  },
+  "channelConfigs": {},
+  "apiCredentialProfiles": {
+    "version": 2,
+    "profiles": [],
+    "lastUpdated": 1775209637179
+  }
+}
