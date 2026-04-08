@@ -1,0 +1,534 @@
+{
+  "version": "2.0",
+  "timestamp": 1775660676576,
+  "accounts": {
+    "accounts": [
+      {
+        "id": "account-b1331cda-bbbf-4aba-95ae-a16fe950fd6b",
+        "site_name": "WOW公益站",
+        "site_url": "https://linuxdoapi.223384.xyz",
+        "health": {
+          "status": "healthy",
+          "reason": "账号状态正常"
+        },
+        "site_type": "new-api",
+        "exchange_rate": 0.5,
+        "account_info": {
+          "id": 8329,
+          "access_token": "Zp3dgjfR0fXoe/NMOiUwLFXSvFrb",
+          "username": "linuxdo_8329",
+          "quota": 250000000,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 50000000
+        },
+        "last_sync_time": 1775567014912,
+        "updated_at": 1775659448898,
+        "created_at": 1775208906257,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "access_token",
+        "checkIn": {
+          "enableDetection": true,
+          "autoCheckInEnabled": true,
+          "siteStatus": {
+            "isCheckedInToday": true,
+            "lastDetectedAt": 1775659448897,
+            "lastCheckInDate": "2026-04-08"
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5
+      },
+      {
+        "id": "account-1d33c798-82ec-4075-8c58-446658aa8b80",
+        "site_name": "Anyrouter",
+        "site_url": "https://anyrouter.top",
+        "health": {
+          "status": "healthy",
+          "reason": "A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received"
+        },
+        "site_type": "anyrouter",
+        "exchange_rate": 7.2,
+        "account_info": {
+          "id": 158821,
+          "access_token": "cplgHOMpXz0BaRl9tAIotfpUb3FsEw==",
+          "username": "linuxdo_158821",
+          "quota": 50000000,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 0
+        },
+        "last_sync_time": 1775306374987,
+        "updated_at": 1775660123871,
+        "created_at": 1775209309980,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "cookie",
+        "checkIn": {
+          "enableDetection": true,
+          "autoCheckInEnabled": true,
+          "siteStatus": {
+            "isCheckedInToday": true,
+            "lastCheckInDate": "2026-04-08",
+            "lastDetectedAt": 1775660123870
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5,
+        "cookieAuth": {
+          "sessionCookie": "session=MTc3NTMwMzU1NnxEWDhFQVFMX2dBQUJFQUVRQUFEX3hfLUFBQVlHYzNSeWFXNW5EQVlBQkhKdmJHVURhVzUwQkFJQUFnWnpkSEpwYm1jTUNBQUdjM1JoZEhWekEybHVkQVFDQUFJR2MzUnlhVzVuREFjQUJXZHliM1Z3Qm5OMGNtbHVad3dKQUFka1pXWmhkV3gwQm5OMGNtbHVad3dOQUF0dllYVjBhRjl6ZEdGMFpRWnpkSEpwYm1jTURnQU1SRFpCZVZSb1JIVkVWalIxQm5OMGNtbHVad3dFQUFKcFpBTnBiblFFQlFEOUJOaktCbk4wY21sdVp3d0tBQWgxYzJWeWJtRnRaUVp6ZEhKcGJtY01FQUFPYkdsdWRYaGtiMTh4TlRnNE1qRT18mvrGuEwIGliabXjhvfKf863NkhBxLJ10u_MgnUD5A28="
+        }
+      },
+      {
+        "id": "account-49a32fd8-93ab-43b7-af67-28b9bdeb92b1",
+        "site_name": "Us",
+        "site_url": "https://openai.api-test.us.ci",
+        "health": {
+          "status": "healthy",
+          "reason": "账号状态正常"
+        },
+        "site_type": "new-api",
+        "exchange_rate": 1,
+        "account_info": {
+          "id": 13672,
+          "access_token": "DxnJ+I70jOzkCCWY2bO2UD11AY4JwQ==",
+          "username": "Tinybbbird",
+          "quota": 3782767,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 6709342.5
+        },
+        "last_sync_time": 1775360534711,
+        "updated_at": 1775388787463,
+        "created_at": 1775209443858,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "access_token",
+        "checkIn": {
+          "enableDetection": true,
+          "autoCheckInEnabled": true,
+          "siteStatus": {
+            "isCheckedInToday": true,
+            "lastDetectedAt": 1775388787462,
+            "lastCheckInDate": "2026-04-05"
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5
+      },
+      {
+        "id": "account-11108ad1-6b0d-44a4-bb27-4ae0bb976b3b",
+        "site_name": "Elysiver",
+        "site_url": "https://elysiver.h-e.top",
+        "health": {
+          "status": "unknown",
+          "reason": "页面加载超时"
+        },
+        "site_type": "new-api",
+        "exchange_rate": 7.2,
+        "account_info": {
+          "id": 21828,
+          "access_token": "",
+          "username": "Tinybbbird",
+          "quota": 0,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 0
+        },
+        "last_sync_time": 1775660179789,
+        "updated_at": 1775660179929,
+        "created_at": 1775306475291,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "cookie",
+        "checkIn": {
+          "enableDetection": true,
+          "autoCheckInEnabled": true,
+          "siteStatus": {
+            "isCheckedInToday": true,
+            "lastCheckInDate": "2026-04-07",
+            "lastDetectedAt": 1775572370303
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "cookieAuth": {
+          "sessionCookie": "session=MTc3NTMwNDkyOXxEWDhFQVFMX2dBQUJFQUVRQUFEX3d2LUFBQVlHYzNSeWFXNW5EQTBBQzI5aGRYUm9YM04wWVhSbEJuTjBjbWx1Wnd3T0FBeGxkbEpUT1hwdk9HVndURm9HYzNSeWFXNW5EQVFBQW1sa0EybHVkQVFFQVA2cWlBWnpkSEpwYm1jTUNnQUlkWE5sY201aGJXVUdjM1J5YVc1bkRBd0FDbFJwYm5saVltSnBjbVFHYzNSeWFXNW5EQVlBQkhKdmJHVURhVzUwQkFJQUFnWnpkSEpwYm1jTUNBQUdjM1JoZEhWekEybHVkQVFDQUFJR2MzUnlhVzVuREFjQUJXZHliM1Z3Qm5OMGNtbHVad3dKQUFka1pXWmhkV3gwfF5CsaWYEHX6CDcmxLSUSGKh44BkFa7KjfIgRAQSv8Lb"
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5
+      },
+      {
+        "id": "account-d28eb3e4-efbf-4fba-9326-f45d6c8d1865",
+        "site_name": "939593",
+        "site_url": "https://wbz-api.939593.xyz",
+        "health": {
+          "status": "healthy"
+        },
+        "site_type": "sub2api",
+        "exchange_rate": 7.2,
+        "account_info": {
+          "id": 963,
+          "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo5NjMsImVtYWlsIjoibGludXhkby0zNTU4NjBAbGludXhkby1jb25uZWN0LmludmFsaWQiLCJyb2xlIjoidXNlciIsInRva2VuX3ZlcnNpb24iOjAsImV4cCI6MTc3NTM5NDY2MiwibmJmIjoxNzc1MzA4MjYyLCJpYXQiOjE3NzUzMDgyNjJ9.IlsBv6xz9JxuOQjnAKfKq4dT5v8Ilx_vq6RrZ2QCPF8",
+          "username": "Tinybbbird",
+          "quota": 50000000000000,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 0
+        },
+        "last_sync_time": 1775308340736,
+        "updated_at": 1775308340737,
+        "created_at": 1775308340737,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "access_token",
+        "checkIn": {
+          "enableDetection": false,
+          "autoCheckInEnabled": false,
+          "siteStatus": {
+            "isCheckedInToday": false
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5
+      },
+      {
+        "id": "account-d47fba66-3643-4d31-bd2c-1b3edbfd1d04",
+        "site_name": "随时跑路公益站",
+        "site_url": "https://runanytime.hxi.me",
+        "health": {
+          "status": "healthy"
+        },
+        "site_type": "new-api",
+        "exchange_rate": 10,
+        "account_info": {
+          "id": 12586,
+          "access_token": "dOs8UN6GE/Xf2pAulcjk9j9ZMLBRgJU=",
+          "username": "Tinybbbird",
+          "quota": 12500000,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 0
+        },
+        "last_sync_time": 1775388751771,
+        "updated_at": 1775659888503,
+        "created_at": 1775388751772,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "access_token",
+        "checkIn": {
+          "enableDetection": true,
+          "autoCheckInEnabled": true,
+          "siteStatus": {
+            "isCheckedInToday": true,
+            "lastDetectedAt": 1775659888502,
+            "lastCheckInDate": "2026-04-08"
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5
+      },
+      {
+        "id": "account-b36e59b9-b590-4818-9cc2-4e16c0847a62",
+        "site_name": "9e",
+        "site_url": "https://free.9e.nz",
+        "health": {
+          "status": "healthy",
+          "reason": "账号状态正常"
+        },
+        "site_type": "sub2api",
+        "exchange_rate": 7.2,
+        "account_info": {
+          "id": 7892,
+          "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo3ODkyLCJlbWFpbCI6ImxpbnV4ZG8tMzU1ODYwQGxpbnV4ZG8tY29ubmVjdC5pbnZhbGlkIiwicm9sZSI6InVzZXIiLCJ0b2tlbl92ZXJzaW9uIjowLCJleHAiOjE3NzU3NDY4NDEsIm5iZiI6MTc3NTY2MDQ0MSwiaWF0IjoxNzc1NjYwNDQxfQ.2VTKAiL2cgYdyhjhd29cTvel-TlUOB-alLltQN8wF34",
+          "username": "Tinybbbird",
+          "quota": 297590000,
+          "today_prompt_tokens": 0,
+          "today_completion_tokens": 0,
+          "today_quota_consumption": 0,
+          "today_requests_count": 0,
+          "today_income": 0
+        },
+        "last_sync_time": 1775660666087,
+        "updated_at": 1775660666088,
+        "created_at": 1775388781112,
+        "notes": "",
+        "tagIds": [],
+        "disabled": false,
+        "excludeFromTotalBalance": false,
+        "authType": "access_token",
+        "checkIn": {
+          "enableDetection": false,
+          "autoCheckInEnabled": false,
+          "siteStatus": {
+            "isCheckedInToday": false
+          },
+          "customCheckIn": {
+            "url": "",
+            "redeemUrl": "",
+            "openRedeemWithCheckIn": true,
+            "isCheckedInToday": false
+          }
+        },
+        "manualBalanceUsd": "",
+        "configVersion": 5
+      }
+    ],
+    "bookmarks": [],
+    "pinnedAccountIds": [],
+    "orderedAccountIds": [],
+    "last_updated": 1775660666088
+  },
+  "tagStore": {
+    "version": 1,
+    "tagsById": {}
+  },
+  "preferences": {
+    "activeTab": "cashflow",
+    "currencyType": "USD",
+    "showTodayCashflow": true,
+    "sortField": "balance",
+    "sortOrder": "desc",
+    "actionClickBehavior": "popup",
+    "openChangelogOnUpdate": true,
+    "autoProvisionKeyOnAccountAdd": false,
+    "warnOnDuplicateAccountAdd": true,
+    "accountAutoRefresh": {
+      "enabled": false,
+      "interval": 900,
+      "minInterval": 120,
+      "refreshOnOpen": false
+    },
+    "usageHistory": {
+      "enabled": true,
+      "retentionDays": 7,
+      "scheduleMode": "afterRefresh",
+      "syncIntervalMinutes": 360
+    },
+    "balanceHistory": {
+      "enabled": false,
+      "endOfDayCapture": {
+        "enabled": false
+      },
+      "retentionDays": 365
+    },
+    "showHealthStatus": true,
+    "webdav": {
+      "url": "",
+      "username": "",
+      "password": "",
+      "backupEncryptionEnabled": false,
+      "backupEncryptionPassword": "",
+      "syncData": {
+        "accounts": true,
+        "bookmarks": true,
+        "apiCredentialProfiles": true,
+        "preferences": true
+      },
+      "autoSync": false,
+      "syncInterval": 3600,
+      "syncStrategy": "merge"
+    },
+    "lastUpdated": 1775308372159,
+    "sharedPreferencesLastUpdated": 1775308372159,
+    "newApi": {
+      "baseUrl": "",
+      "adminToken": "",
+      "userId": "",
+      "username": "",
+      "password": "",
+      "totpSecret": ""
+    },
+    "doneHub": {
+      "baseUrl": "",
+      "adminToken": "",
+      "userId": ""
+    },
+    "veloera": {
+      "baseUrl": "",
+      "adminToken": "",
+      "userId": ""
+    },
+    "octopus": {
+      "baseUrl": "",
+      "username": "",
+      "password": ""
+    },
+    "managedSiteType": "new-api",
+    "cliProxy": {
+      "baseUrl": "",
+      "managementKey": ""
+    },
+    "claudeCodeRouter": {
+      "baseUrl": "",
+      "apiKey": ""
+    },
+    "managedSiteModelSync": {
+      "enabled": false,
+      "interval": 86400000,
+      "concurrency": 2,
+      "maxRetries": 2,
+      "rateLimit": {
+        "requestsPerMinute": 20,
+        "burst": 5
+      },
+      "allowedModels": [],
+      "globalChannelModelFilters": []
+    },
+    "autoCheckin": {
+      "globalEnabled": true,
+      "pretriggerDailyOnUiOpen": true,
+      "notifyUiOnCompletion": true,
+      "windowStart": "09:00",
+      "windowEnd": "23:00",
+      "scheduleMode": "random",
+      "deterministicTime": "09:00",
+      "retryStrategy": {
+        "enabled": false,
+        "intervalMinutes": 30,
+        "maxAttemptsPerDay": 3
+      }
+    },
+    "modelRedirect": {
+      "enabled": false,
+      "standardModels": [
+        "gpt-4o",
+        "gpt-4o-mini",
+        "o3",
+        "o3-mini",
+        "gpt-5",
+        "gpt-5-mini",
+        "gpt-5-codex",
+        "claude-4.5-haiku",
+        "claude-4.5-sonnet",
+        "claude-4.1-opus",
+        "gemini-2.5-pro",
+        "gemini-2.5-flash",
+        "mistral-small",
+        "mistral-large",
+        "mistral-medium",
+        "deepseek-chat",
+        "deepseek-reasoner",
+        "glm-4.6",
+        "glm-4.5",
+        "glm-4.5-air",
+        "qwen-max",
+        "qwen-plus",
+        "qwen-flash",
+        "qwen-coder"
+      ],
+      "pruneMissingTargetsOnModelSync": false
+    },
+    "redemptionAssist": {
+      "enabled": true,
+      "contextMenu": {
+        "enabled": true
+      },
+      "relaxedCodeValidation": true,
+      "urlWhitelist": {
+        "enabled": true,
+        "patterns": [
+          "cdk.linux.do"
+        ],
+        "includeAccountSiteUrls": true,
+        "includeCheckInAndRedeemUrls": true
+      }
+    },
+    "webAiApiCheck": {
+      "enabled": true,
+      "contextMenu": {
+        "enabled": true
+      },
+      "autoDetect": {
+        "enabled": false,
+        "urlWhitelist": {
+          "patterns": []
+        }
+      }
+    },
+    "themeMode": "system",
+    "language": "zh-CN",
+    "logging": {
+      "consoleEnabled": true,
+      "level": "info"
+    },
+    "preferencesVersion": 17,
+    "tempWindowFallback": {
+      "enabled": true,
+      "useInPopup": true,
+      "useInSidePanel": true,
+      "useInOptions": true,
+      "useForAutoRefresh": true,
+      "useForManualRefresh": true,
+      "tempContextMode": "composite"
+    },
+    "tempWindowFallbackReminder": {
+      "dismissed": false
+    }
+  },
+  "channelConfigs": {},
+  "apiCredentialProfiles": {
+    "version": 2,
+    "profiles": [],
+    "lastUpdated": 1775303267982
+  }
+}
